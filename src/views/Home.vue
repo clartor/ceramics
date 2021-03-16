@@ -1,10 +1,8 @@
 <template>
 <body>
-  
-
 <h1>Mandys Keramik</h1>
-<img class="moodpic" src="../../public/keramikBilder/mood.jpeg" alt="">
-  <div class="bilder">
+ <img class="moodpic" src="../../public/keramikBilder/mood.jpeg" alt="">
+  <!--<div class="bilder">
     <img src="../../public/Keramik/kannaTre.png" alt="">
     <img src="../../public/Keramik/kannaEn.png" alt="">
     <img src="../../public/Keramik/kopparRibb.png" alt="">
@@ -12,7 +10,7 @@
     <img src="../../public/Keramik/kopparSmåÖron.png" alt="">
     <img src="../../public/Keramik/Mortlar.png" alt="">
     <img src="../../public/Keramik/Servett.png" alt="">
-  </div>
+  </div> -->
 </body>
 </template>
 
@@ -29,8 +27,7 @@ bilder{
 
 }
 moodpic{
- width: 100vw;
- height: 50vw;
+ size: smaller;
 }
 
 </style>
