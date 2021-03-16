@@ -19,10 +19,11 @@ export default {
 <style>
 home{
   display: grid;
+  grid-template-columns: 40px auto 40px;
 
 }
 img{
-  size: 20px;
+  size: 10px;
 }
 
 </style>
