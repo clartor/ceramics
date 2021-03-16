@@ -1,18 +1,19 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img src="../../public/Keramik/kannaTre.png" alt="">
+    <img src="../../public/Keramik/KannaEn.png" alt="">
+    <img src="../../public/Keramik/kopparTre.png" alt="">
+    <img src="../../public/Keramik/kopparRibb.png" alt="">
+    <img src="../../public/Keramik/kommarSläta.png" alt="">
+    <img src="../../public/Keramik/kopparSmåÖron.png" alt="">
+    <img src="../../public/Keramik/Mortlar.png" alt="">
+    <img src="../../public/Keramik/Servett.png" alt="">
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
+  
 }
 </script>
