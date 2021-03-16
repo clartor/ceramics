@@ -17,9 +17,12 @@ export default {
 }
 </script>
 <style>
-div{
+home{
   display: grid;
 
+}
+img{
+  size: 20px;
 }
 
 </style>
