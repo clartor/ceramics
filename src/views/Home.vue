@@ -23,7 +23,7 @@
       <br>
       Istället för att skydda kopparna med bubbelplast tar vi begagnade kläder från hemlösa och skyddar produkterna.
       <br>
-      För att minska miljöpåverkan levereras allt med cykel. Planera därför ditt köp, leveransen kan ta allt från en dag till 1 år, berorende på hur vältränad budet är.</p>
+      För att minska miljöpåverkan levereras allt med cykel. Planera ditt köp, leveransen kan ta allt från en dag till 1 år, berorende på hur vältränad budet är.</p>
     
       <div id="imagelist">
         <!-- bilder = 320x320px -->
