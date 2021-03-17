@@ -10,6 +10,7 @@
         class="bild1"
       />
     </section>
+
     <p>Med noggrann utvald lera från hemliga och magiska platser vid västkusten har jag skapat keramik som passar alla hem. 
       I naturen finner man lugn och ro, därför skapar jag alltid mina varor på klipporna vid soluppgång eller solnedgång. 
       Ni kan känna varje drag, ni kan smaka min själ när era läppar rör koppens kant, det är en helhetsupplevelse ni kan få varje dag.
@@ -27,20 +28,37 @@
     
       <div id="imagelist">
         <!-- bilder = 320x320px -->
+        
         <a href="">
-        <img src="../../public/keramikBilder/kopparSmåÖron.png" alt="" class="produkt1" /></a> 
+        <img src="../../public/keramikBilder/kopparSläta.png" alt="" class="produkt2"/>
+        <p>Slätis</p></a>
         <a href="">
-        <img src="../../public/keramikBilder/kopparSläta.png" alt="" class="produkt2" /></a>
+        <img src="../../public/keramikBilder/koppUtanÖra.jpg" alt="" class="produkt9"/>
+        <p>Muggar</p></a>
         <a href="">
-        <img src="../../public/keramikBilder/kopparRibb.png" alt="" class="produkt3"/></a>
+        <img src="../../public/keramikBilder/brunMugg.jpg" alt="" class="produkt10"/>
+        <p>Kaffe</p></a>
         <a href="">
-        <img src="../../public/keramikBilder/kannaEn.png" alt="" class="produkt4"/></a>
+        <img src="../../public/keramikBilder/kopparRibb.png" alt="" class="produkt3"/>
+        <p>Ribbis</p></a>
         <a href="">
-        <img src="../../public/keramikBilder/kannaTre.png" alt="" class="produkt5"/></a>
+        <img src="../../public/keramikBilder/kopparSmåÖron.png" alt="" class="produkt1"/>
+        <p>Lill-öra</p></a> 
         <a href="">
-        <img src="../../public/keramikBilder/Mortlar.png" alt="" class="produkt6"/></a>
+        <img src="../../public/keramikBilder/olja.jpg" alt="" class="produkt5"/>
+        <p>Oljeflaska</p></a>
         <a href="">
-        <img src="../../public/keramikBilder/Servett.png" alt="" class="produkt7"/></a>
+        <img src="../../public/keramikBilder/kannaEn.jpg" alt="" class="produkt4"/>
+        <p>Kannan</p></a>
+        <a href="">
+        <img src="../../public/keramikBilder/Mortlar.png" alt="" class="produkt6"/>
+        <p>Mortla</p></a>
+        <!-- <a href="">
+        <img src="../../public/keramikBilder/Servett.png" alt="" class="produkt7"/>
+        <p>Servettringar</p></a> -->
+        <a href="">
+        <img src="../../public/keramikBilder/kruka.jpg" alt="" class="produkt8"/>
+        <p>Krukan</p></a>
       </div>
 
     </body>
@@ -61,6 +79,7 @@ export default {};
 h1 {
   grid-column: 0/12;
   grid-row: 1/2;
+  font-size: 38px;
 }
 body{
   background-color: rgb(247, 241, 236);
@@ -70,7 +89,7 @@ body{
   grid-row: 2/4;
 }
 p{
-  font-size: 28px;
+  font-size: 20px;
 }
 #imagelist{
   font-size: 0;
@@ -84,13 +103,14 @@ p{
   -webkit-border-radius: 8px;
   border-radius: 8px;
 }
-#imagelist a:hover {
-  border-color:burlywood;
-}
 #imagelist img {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
+#imagelist img:hover {
+  opacity: 0.75;
+}
+
 
 
 </style>
