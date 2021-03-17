@@ -12,19 +12,9 @@
     </section>
 
     <p>Med noggrann utvald lera från hemliga och magiska platser vid västkusten har jag skapat keramik som passar alla hem. 
-      I naturen finner man lugn och ro, därför skapar jag alltid mina varor på klipporna vid soluppgång eller solnedgång. 
+      I naturen finner man lugn och ro, därför skapar jag alltid mina varor helt näck på klipporna vid soluppgång eller solnedgång. 
       Ni kan känna varje drag, ni kan smaka min själ när era läppar rör koppens kant, det är en helhetsupplevelse ni kan få varje dag.
-      <br> 
-      Köp allt, jag lovar att det är värt det. 
-      <br>
-      <br>
-      Alla våra produkter är veganska. När vi tar upp leran så går vi noga igenom den så att ingen mask, larv, bagge eller fisk skadas. 
-      <br>
-      För varje produkt ni köper så planterar vi ett träd i Kiruna. 
-      <br>
-      Istället för att skydda kopparna med bubbelplast tar vi begagnade kläder från hemlösa och skyddar produkterna.
-      <br>
-      För att minska miljöpåverkan levereras allt med cykel. Planera ditt köp, leveransen kan ta allt från en dag till 1 år, berorende på hur vältränad budet är.</p>
+     </p>
     
       <div id="imagelist">
         <!-- bilder = 320x320px -->
@@ -61,6 +51,20 @@
         <p>Krukan</p></a>
       </div>
 
+      <p>
+       <br> 
+      Köp allt, jag lovar att det är värt det. 
+      <br>
+      <br>
+      Alla våra produkter är veganska. När vi tar upp leran så går vi noga igenom den så att ingen mask, larv, bagge eller fisk skadas. 
+      <br>
+      För varje produkt ni köper så planterar vi ett träd i Kiruna. 
+      <br>
+      Istället för att skydda kopparna med bubbelplast tar vi begagnade kläder från hemlösa och skyddar produkterna.
+      <br>
+      För att minska miljöpåverkan levereras allt med cykel. Planera ditt köp, leveransen kan ta allt från en dag till 1 år, berorende på hur vältränad budet är.
+      </p>
+
     </body>
 
   </div>
@@ -90,6 +94,10 @@ body{
 }
 p{
   font-size: 20px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  border: solid 1px;
+  padding: 20px;
+  line-height: 1.8;
 }
 #imagelist{
   font-size: 0;
