@@ -42,12 +42,12 @@ export default {};
 .container {
   display: grid;
   grid-auto-rows: min-content;
-  grid-auto-columns: min-content;
-
+  /* grid-auto-columns: min-content; */
+  grid-column: (12 1fr);
 }
 h1 {
-  grid-column: 0/13;
-  grid-row: 0/1;
+  grid-column: 0/12;
+  grid-row: 1/2;
 }
 body{
   background-color: rgb(247, 241, 236);
