@@ -1,38 +1,37 @@
 <template>
   <div class="container">
-    <h1>Mandys Keramik</h1>
+  <h1>Mandys Keramik</h1>
+    
+    <body>
     <section class="moodpic">
       <img
         src="../../public/keramikBilder/mood-min.jpeg"
         alt=""
         class="bild1"
       />
-      <p>navbar navbar   navbar   navbar   navbar</p>
     </section>
+    <p>navbar   navbar   navbar   navbar   navbar</p>
     
-    <body>
-      <section class="vara1">
-        <img src="../../public/keramikBilder/kannaTre.png" alt="" class="produkt1" />
-      </section>
-      <section class="vara2">
-        <img src="../../public/keramikBilder/kannaEn.png" alt="" class="produkt2" />
-      </section>
-      <section class="vara3">
-        <img src="../../public/keramikBilder/kopparRibb.png" alt="" class="produkt3"/>
-      </section>
-      <section class="vara4">
-        <img src="../../public/keramikBilder/kopparSläta.png" alt="" class="produkt4"/>
-      </section>
-      <section class="vara5">
-        <img src="../../public/keramikBilder/kopparSmåÖron.png" alt="" class="produkt5"/>
-      </section>
-      <section class="vara6">
-        <img src="../../public/keramikBilder/Mortlar.png" alt="" class="produkt6"/>
-      </section>
-      <section class="vara7">
-        <img src="../../public/keramikBilder/Servett.png" alt="" class="produkt7"/>
-      </section>
+      <div id="imagelist">
+        <!-- bilder = 320x320px -->
+        <a href="">
+        <img src="../../public/keramikBilder/kopparSmåÖron.png" alt="" class="produkt1" /></a> 
+        <a href="">
+        <img src="../../public/keramikBilder/kopparSläta.png" alt="" class="produkt2" /></a>
+        <a href="">
+        <img src="../../public/keramikBilder/kopparRibb.png" alt="" class="produkt3"/></a>
+        <a href="">
+        <img src="../../public/keramikBilder/kannaEn.png" alt="" class="produkt4"/></a>
+        <a href="">
+        <img src="../../public/keramikBilder/kannaTre.png" alt="" class="produkt5"/></a>
+        <a href="">
+        <img src="../../public/keramikBilder/Mortlar.png" alt="" class="produkt6"/></a>
+        <a href="">
+        <img src="../../public/keramikBilder/Servett.png" alt="" class="produkt7"/></a>
+      </div>
+
     </body>
+
   </div>
 </template>
 
@@ -41,61 +40,44 @@ export default {};
 </script>
 <style>
 .container {
-  background-color: rgb(247, 241, 236);
-  margin: 0;
-  /* gap: 2%; */
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: min-content;
+  /* grid-auto-columns: min-content; */
+  grid-column: (12 1fr);
 }
 h1 {
-  grid-column: 1/13;
-  grid-row: 0/1;
+  grid-column: 0/12;
+  grid-row: 1/2;
+}
+body{
+  background-color: rgb(247, 241, 236);
 }
 .moodpic {
-  grid-column: 1/13;
+  /* grid-column: 0/12; */
   grid-row: 2/4;
 }
 p{
   font-size: 28px;
 }
-body{
-  grid: 'vara1, vara2, vara7'
+#imagelist{
+  font-size: 0;
+  width: 1220px;
+  margin: 0 auto;
 }
-/*
-.vara1, .vara4, .vara7 
-{
-  grid-column: 1/4;
-  grid-row: 5/7;
+#imagelist a {
+  margin: 40px;
+  border: 3px solid transparent;
+  display: inline-block;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
 }
-.vara2, .vara5 {
-  grid-column: 5/9;
-  grid-row: 8/10;
+#imagelist a:hover {
+  border-color:burlywood;
 }
-.vara3, .vara6{
-  grid-column: 11/13;
-  grid-row: 11/13;
-} 
+#imagelist img {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
 
-.produkt1, .produkt4, .produkt7 {
-  width: 100%;
-  box-shadow: 2px 2px 4px #000000;
-  border-radius: 5%;
-  grid-column: 1/4;
-  margin-top: 20px;
-}
-.produkt2, .produkt5 {
-  width: 100%;
-  box-shadow: 2px 2px 4px #000000;
-  border-radius: 5%;
-  grid-column: 5/9;
-  margin-top: 20px;
-  }*/
-  img {
-  width: 100%;
-  box-shadow: 2px 2px 4px #000000;
-  border-radius: 5%;
-  grid-column: 10/13;
-  margin-top: 20px;
-  } 
+
 </style>
