@@ -21,12 +21,21 @@ export default {
 }
 </script>
 <style>
-bilder{
-  display: grid;
-  grid-template-columns: 40px auto 40px;
+
+#container {
+    width: 90%;
+    margin: 0 auto;
+    gap: 2%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.bilder{
+  grid-column: 3/10;
 
 }
-moodpic{
+.moodpic{
+  grid-column: 1/12;
  size: smaller;
 }
 
