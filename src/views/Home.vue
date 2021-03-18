@@ -38,7 +38,7 @@
         <img src="../../public/keramikBilder/olja.jpg" alt="" class="produkt5"/>
         <p>Oljeflaska</p></router-link>
         <router-link to="/kannor">
-        <img src="../../public/keramikBilder/kannaEn.jpg" alt="" class="produkt4"/>
+        <img src="../../public/keramikBilder/kannaEn.png" alt="" class="produkt4"/>
         <p>Kannor</p></router-link>
         <router-link to="/mortlar">
         <img src="../../public/keramikBilder/Mortlar.png" alt="" class="produkt6"/>
