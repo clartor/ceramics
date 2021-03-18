@@ -20,7 +20,7 @@
         <!-- bilder = 320x320px -->
         
         <router-link to="/slatis">>
-        <img src="../../public/keramikBilder/kopparSläta.png" alt="" class="produkt2"/>
+        <img src="../../public/keramikBilder/kopparSläta.jpg" alt="" class="produkt2"/>
         <p>Slätis</p></router-link>
         <a href="">
         <img src="../../public/keramikBilder/koppUtanÖra.jpg" alt="" class="produkt9"/>
@@ -41,7 +41,7 @@
         <img src="../../public/keramikBilder/kannaEn.jpg" alt="" class="produkt4"/>
         <p>Kannor</p></a>
         <a href="">
-        <img src="../../public/keramikBilder/Mortlar.png" alt="" class="produkt6"/>
+        <img src="../../public/keramikBilder/mortel.jpg" alt="" class="produkt6"/>
         <p>Mortlar</p></a>
         <a href="">
         <img src="../../public/keramikBilder/kruka.jpg" alt="" class="produkt8"/>
