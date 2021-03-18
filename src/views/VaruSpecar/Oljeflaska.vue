@@ -4,6 +4,7 @@
         <h1>Oljeflaska</h1>
         <img src="../../../public/keramikBilder/olja.jpg" alt="" class="produkt6"/>
         <img src="/../../keramikBilder/bild2/olja2.jpg" alt="" class=""/>
+        <p>Pris, lägg-till-knapp, antal tillagda produkter</p>
         <p>Olja</p>
     </div>
 </div>             

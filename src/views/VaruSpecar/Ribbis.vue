@@ -4,6 +4,7 @@
         <h1>Ribbis</h1>
         <img src="../../../public/keramikBilder/kopparRibb.png" alt="" class="produkt4"/>
         <img src="/../../keramikBilder/bild2/kopparRibb2.jpg" alt="" class=""/>
+        <p>Pris, lägg-till-knapp, antal tillagda produkter</p>
         <p>Ribbis</p>
     </div>
 
