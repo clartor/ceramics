@@ -20,7 +20,7 @@
         <!-- bilder = 320x320px -->
         
         <router-link to="/slatis">
-        <img src="../../public/keramikBilder/kopparSläta.png" alt="" class="produkt2"/>
+        <img src="../../public/keramikBilder/kopparSläta.jpg" alt="" class="produkt2"/>
         <p>Slätis</p></router-link>
         <router-link to="/lugn">
         <img src="../../public/keramikBilder/koppUtanÖra.jpg" alt="" class="produkt9"/>
@@ -38,10 +38,10 @@
         <img src="../../public/keramikBilder/olja.jpg" alt="" class="produkt5"/>
         <p>Oljeflaska</p></router-link>
         <router-link to="/kannor">
-        <img src="../../public/keramikBilder/kannaEn.png" alt="" class="produkt4"/>
+        <img src="../../public/keramikBilder/kannaEn.jpg" alt="" class="produkt4"/>
         <p>Kannor</p></router-link>
         <router-link to="/mortlar">
-        <img src="../../public/keramikBilder/Mortlar.png" alt="" class="produkt6"/>
+        <img src="../../public/keramikBilder/Mortel.jpg" alt="" class="produkt6"/>
         <p>Mortlar</p></router-link>
         <router-link to="/krukor">
         <img src="../../public/keramikBilder/kruka.jpg" alt="" class="produkt8"/>
