@@ -19,33 +19,33 @@
       <div id="imagelist">
         <!-- bilder = 320x320px -->
         
-        <router-link to="/slatis">>
+        <router-link to="/slatis">
         <img src="../../public/keramikBilder/kopparSläta.png" alt="" class="produkt2"/>
         <p>Slätis</p></router-link>
-        <a href="">
+        <router-link to="/lugn">
         <img src="../../public/keramikBilder/koppUtanÖra.jpg" alt="" class="produkt9"/>
-        <p>Lugn</p></a>
-        <a href="">
+        <p>Lugn</p></router-link>
+        <router-link to="/kaffe">
         <img src="../../public/keramikBilder/brunMugg.jpg" alt="" class="produkt10"/>
-        <p>Kaffe</p></a>
-        <a href="">
+        <p>Kaffe</p></router-link>
+        <router-link to="/ribbis">
         <img src="../../public/keramikBilder/kopparRibb.png" alt="" class="produkt3"/>
-        <p>Ribbis</p></a>
-        <a href="">
+        <p>Ribbis</p></router-link>
+        <router-link to="/lillOra">
         <img src="../../public/keramikBilder/kopparSmåÖron.png" alt="" class="produkt1"/>
-        <p>Lill-öra</p></a> 
-        <a href="">
+        <p>Lill-öra</p></router-link> 
+        <router-link to="/oljeflaska">
         <img src="../../public/keramikBilder/olja.jpg" alt="" class="produkt5"/>
-        <p>Oljeflaska</p></a>
-        <a href="">
+        <p>Oljeflaska</p></router-link>
+        <router-link to="/kannor">
         <img src="../../public/keramikBilder/kannaEn.jpg" alt="" class="produkt4"/>
-        <p>Kannor</p></a>
-        <a href="">
+        <p>Kannor</p></router-link>
+        <router-link to="/mortlar">
         <img src="../../public/keramikBilder/Mortlar.png" alt="" class="produkt6"/>
-        <p>Mortlar</p></a>
-        <a href="">
+        <p>Mortlar</p></router-link>
+        <router-link to="/krukor">
         <img src="../../public/keramikBilder/kruka.jpg" alt="" class="produkt8"/>
-        <p>Krukor</p></a>
+        <p>Krukor</p></router-link>
       </div>
 
       <p>
