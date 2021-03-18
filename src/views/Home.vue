@@ -19,12 +19,12 @@
       <div id="imagelist">
         <!-- bilder = 320x320px -->
         
-        <a href="">
+        <router-link to="/slatis">>
         <img src="../../public/keramikBilder/kopparSläta.png" alt="" class="produkt2"/>
-        <p>Slätis</p></a>
+        <p>Slätis</p></router-link>
         <a href="">
         <img src="../../public/keramikBilder/koppUtanÖra.jpg" alt="" class="produkt9"/>
-        <p>Muggar</p></a>
+        <p>Lugn</p></a>
         <a href="">
         <img src="../../public/keramikBilder/brunMugg.jpg" alt="" class="produkt10"/>
         <p>Kaffe</p></a>
@@ -39,16 +39,13 @@
         <p>Oljeflaska</p></a>
         <a href="">
         <img src="../../public/keramikBilder/kannaEn.jpg" alt="" class="produkt4"/>
-        <p>Kannan</p></a>
+        <p>Kannor</p></a>
         <a href="">
         <img src="../../public/keramikBilder/Mortlar.png" alt="" class="produkt6"/>
-        <p>Mortla</p></a>
-        <!-- <a href="">
-        <img src="../../public/keramikBilder/Servett.png" alt="" class="produkt7"/>
-        <p>Servettringar</p></a> -->
+        <p>Mortlar</p></a>
         <a href="">
         <img src="../../public/keramikBilder/kruka.jpg" alt="" class="produkt8"/>
-        <p>Krukan</p></a>
+        <p>Krukor</p></a>
       </div>
 
       <p>
