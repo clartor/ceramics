@@ -19,6 +19,46 @@ const routes = [
     path: '/slatis',
     name: 'Slatis',
     component: () => import('../views/VaruSpecar/Slatis.vue')
+  },
+  {
+    path: '/lugn',
+    name: 'Lugn',
+    component: () => import('../views/VaruSpecar/Lugn.vue')
+  },
+  {
+    path: '/kaffe',
+    name: 'Kaffe',
+    component: () => import('../views/VaruSpecar/Kaffe.vue')
+  },
+  {
+    path: '/ribbis',
+    name: 'Ribbis',
+    component: () => import('../views/VaruSpecar/Ribbis.vue')
+  },
+  {
+    path: '/lillOra',
+    name: 'LillOra',
+    component: () => import('../views/VaruSpecar/LillOra.vue')
+  },
+  {
+    path: '/oljeflaska',
+    name: 'Oljeflaska',
+    component: () => import('../views/VaruSpecar/Oljeflaska.vue')
+  },
+  {
+    path: '/kannor',
+    name: 'Kannor',
+    component: () => import('../views/VaruSpecar/Kannor.vue')
+  },
+  {
+    path: '/mortlar',
+    name: 'Mortlar',
+    component: () => import('../views/VaruSpecar/Mortlar.vue')
+  },
+  {
+    path: '/krukor',
+    name: 'Krukor',
+    component: () => import('../views/VaruSpecar/Krukor.vue')
   }
 ]
 
