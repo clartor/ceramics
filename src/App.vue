@@ -37,12 +37,20 @@ h1{
   text-decoration: underline;
   line-height: 1.8;
 }
-p{
+.varor p{
   font-size: 20px;
   font-family: "Lucida Console", "Courier New", monospace;
   border: solid 1px;
   padding: 20px;
   line-height: 1.8;
+  width: fit-content;
+  text-align: justify;
+}
+button{
+  font-size: 14px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  border: solid 1px;
+  padding: 10px;
 }
 .varor{
   font-size: 0;
