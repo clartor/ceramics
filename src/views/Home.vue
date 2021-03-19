@@ -18,6 +18,7 @@
     
       <div id="imagelist">
         <!-- bilder = 320x320px -->
+
         <router-link to="/slatis">
         <img src="../../public/keramikBilder/kopparSläta.jpg" alt="" class="produkt1"/>
         <p>Slätis</p></router-link>
