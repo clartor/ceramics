@@ -41,7 +41,7 @@
         <img src="../../public/keramikBilder/kannaEn.jpg" alt="" class="produkt7"/>
         <p>Kannor</p></router-link>
         <router-link to="/mortlar">
-        <img src="../../public/keramikBilder/Mortel.jpg" alt="" class="produkt8"/>
+        <img src="../../public/keramikBilder/mortel.jpg" alt="" class="produkt8"/>
         <p>Mortlar</p></router-link>
         <router-link to="/krukor">
         <img src="../../public/keramikBilder/kruka.jpg" alt="" class="produkt9"/>
