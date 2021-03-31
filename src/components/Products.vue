@@ -18,12 +18,12 @@ export default {
     return {
       products: [
         {
-          name: "Hair Brush",
+          name: "Kannan",
           cost: "$0.99",
-          image: "https://via.placeholder.com/150"
+          image: "../public/keramikBilder/kannaEn.jpg"
         },
         {
-          name: "Cookies",
+          name: "Mortla",
           cost: "$5.99",
           image: "https://via.placeholder.com/150"
         }
