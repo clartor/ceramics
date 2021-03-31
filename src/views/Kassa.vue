@@ -1,9 +1,12 @@
 
 <template>
   <div class="kassa">
-    <h1>Welcome, {{ name }}</h1>
-    <button class="logout" @click="Logout">Logout</button>
-    <h1>Products</h1>
+
+  <link rel="stylesheet" href="../../style.css">
+    <!-- <h1>Welcome, {{ name }}</h1> -->
+    <p class="loginLink"><router-link to="/login">Medlem? Logga in här</router-link></p>
+    <!-- <button class="logout" @click="Logout">Logout</button> -->
+    <h1>I din varukorg:</h1>
     <div class="products">
       <div v-for="product in products" :key="product.name">
         {{ product.name }}
@@ -39,7 +42,7 @@ export default {
           .catch(err => alert(err.message));
     }
 
-    return {
+    return {  
       name,
       Logout
     }
@@ -83,5 +86,4 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
 </style>

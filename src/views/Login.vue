@@ -1,11 +1,13 @@
 <template>
  <div class="login">
+
+  <link rel="stylesheet" href="../../style.css">
    <h1>Login</h1>
    <form @submit.prevent="Login">
      <input type="text" placeholder="Email" v-model="email" />
      <input type="password" placeholder="Password" v-model="password" />
      <input type="submit" placeholder="Login" />
-     <p>Need an account? <router-link to="/register">Register Here</router-link></p>
+     <p class="loginLink">Need an account? <router-link to="/register">Register Here</router-link></p>
    </form>
  </div>
 </template>
