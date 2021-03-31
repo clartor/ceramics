@@ -3,11 +3,13 @@
     <link rel="stylesheet" href="../../style.css" />
     <h1>Register</h1>
     <form @submit.prevent="Register">
-      <input type="text" placeholder="Email" v-model="email" />
-      <input type="password" placeholder="Password" v-model="password" />
-      <input type="submit" placeholder="Register" />
-      <p class="loginLink">Have an account? <router-link to="/login">Login Here</router-link></p>
+      <input type="text" placeholder="Email" v-model="email"/>
+      <input type="password" placeholder="Password" v-model="password"/>
+      <!-- <input type="password" placeholder="Repeat Password"/> must match -->
+      <input type="submit" value="Register" />
+      <p class="loginLink">Redan medlem? <router-link to="/login">Logga in här</router-link></p>
     </form>
+  <p class="backLink"><router-link to="/">Tillbaka</router-link></p>
   </div>
 </template>
 
@@ -24,12 +26,14 @@ export default {
       firebase
         .auth()
         .createUserWithEmailAndPassword(email.value, password.value)
-        .then((user) => {
-          alert(user);
-        })
+        .then((data) => console.log(data))
         .catch((err) => alert(err.message));
     };
-
+    //     .then((user) => {
+    //       alert(user);
+    //     })
+    //     .catch((err) => alert(err.message));
+    // };
     return {
       Register,
       email,
