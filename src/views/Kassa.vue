@@ -1,22 +1,18 @@
-
 <template>
-  <div class="kassa">
+  <div>
+    <header>
+      <button v-on:click="navigateTo('products')">View products</button>
+      {{cart.length}} in cart
+      <button v-on:click="navigateTo('cart')">View Cart</button>
+    </header>
 
-  <link rel="stylesheet" href="../../style.css">
-    <!-- <h1>Välkommen, {{ name }}</h1> -->
-    <p class="loginLink"><router-link to="/login">Medlem? Logga in här</router-link></p>
-    
-    <h1>I din varukorg:</h1>
-    <div class="products">
-      <div v-for="product in products" :key="product.name">
-        {{ product.name }}
-        <img :src="product.image" alt="PLACEHOLDER" />
-        <div>{{ product.cost }}</div>
-        <button v-on:click="addItemToCart(product)">Add to cart</button>
-      </div>
-      </div>
-      <br><br><br>
-      <!-- <button class="logout" @click="Logout">Logout</button> -->
+    <div v-if="page === 'cart'">
+      <Cart v-on:removeItemFromCart="removeItemFromCart" :cart="cart" />
+    </div>
+
+    <div v-if="page === 'products'">
+      <Products v-on:addItemToCart="addItemToCart" />
+    </div>
   </div>
 </template>
 
@@ -56,32 +52,28 @@ export default {
 
 
 <script>
+import Products from "../components/Products.vue";
+import Cart from "../components/Cart.vue";
 export default {
   name: "App",
   data: () => {
     return {
-      cart: [],
-      products: [
-        {
-          name: "Hair Brush",
-          cost: "$0.99",
-          // image: "https://via.placeholder.com/150",
-        },
-        {
-          name: "Death Star",
-          cost: "$5.99",
-          // image: "https://via.placeholder.com/150",
-        },
-      ],
+      page: "products",
+      cart: []
     };
   },
   methods: {
     addItemToCart(product) {
-      console.log(product);
-
+      this.cart.push(product);
+    },
+    removeItemFromCart(product) {
+      this.cart.splice(this.cart.indexOf(product), 1);
+    },
+    navigateTo(page) {
+      this.page = page;
     }
   },
-  components: {},
+  components: { Products, Cart }
 };
 </script>
 
@@ -89,5 +81,14 @@ export default {
 .products {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+header {
+  height: 60px;
+  background-color: rgb(196, 183, 183);
+  box-shadow: 2px 2px 5px #999;
+  text-align: right;
+  font-size: 30px;
+  padding-top: 20px;
 }
 </style>
