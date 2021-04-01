@@ -2,7 +2,7 @@
  <div class="login">
   <link rel="stylesheet" href="../../style.css">
    <h1>Login</h1>
-   <form @submit.prevent="Login"> 
+   <form @submit.prevent="pressed"> 
      <input type="text" placeholder="Email" v-model="email"/>
      <input type="password" placeholder="Lösenord" v-model="password"/>
      <input type="submit" value="Login" />

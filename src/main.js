@@ -2,11 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-// import firebase from 'firebase/app'
-// import firebase from 'firebase';
-// import "firebase/app";
 import firebase from 'firebase/app';
 import 'firebase/auth'; 
+import axios from 'axios';
 // import 'firebase/database'; // If using Firebase database
 // import 'firebase/storage';  // If using Firebase storage
 
@@ -22,9 +20,17 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 Vue.config.productionTip = false
+Vue.prototype.$axios = axios;
 
-new Vue({
-  router,
-  store,
-  render: h => h(App)
-}).$mount('#app')
+let app;
+
+firebase.auth().onAuthStateChanged(user=> {
+  console.log(user);
+  if(!app) {
+    app = new Vue({
+      router,
+      store,
+      render: h => h(App)
+    }).$mount('#app')
+  }
+})

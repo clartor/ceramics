@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <top-header></top-header>
     <div id="nav">
       <router-link to="/">Varor</router-link> |
       <router-link to="/kassa">Kassa</router-link>
@@ -9,27 +10,11 @@
 </template>
 
 <script>
-import { onBeforeMount } from 'vue';
-import { useRouter, useRoute } from 'vue-router';
-import firebase from 'firebase';
-import "firebase/app";
+  import TopHeader from "./components/Top-Header";
+
 
 export default {
-  setup() {
-    const router = useRouter();
-    const route = useRoute();
-
-    onBeforeMount(() => {
-      firebase.auth().onAuthStateChanged((user) => {
-        if (!user) {
-          router.replace('/login');
-        } else if (route.path == "/login" || route.path == "/register") {
-          router.replace('/kassa');
-        }
-      });
-
-    });
-  }
+  components: {'top-header': TopHeaderTopHeader}
 }
 </script>
 
