@@ -12,6 +12,7 @@
 import { onBeforeMount } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 import firebase from 'firebase';
+import "firebase/app";
 
 export default {
   setup() {

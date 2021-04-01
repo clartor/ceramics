@@ -2,41 +2,43 @@
  <div class="login">
   <link rel="stylesheet" href="../../style.css">
    <h1>Login</h1>
-   <form @submit.prevent="Login">
-     <input type="text" placeholder="Email" v-model="email" />
-     <input type="password" placeholder="Password" v-model="password" />
+   <form @submit.prevent="Login"> 
+     <input type="text" placeholder="Email" v-model="email"/>
+     <input type="password" placeholder="Lösenord" v-model="password"/>
      <input type="submit" value="Login" />
-     <p class="loginLink">Inte medlem än? <router-link to="/register">Registrera Här</router-link></p>
+     <p class="loginLink">Inte medlem än? <router-link to="/register">Registrera här</router-link></p>
    </form>
-    <p class="backLink"><router-link to="/">Tillbaka</router-link></p>
+    <p class="backLink"><router-link to="/">Tillbaka till start</router-link></p>
  </div>
 </template>
 
 <script>
-import { ref } from 'vue';
-import firebase from 'firebase';
-import 'firebase/auth'; 
-
+import firebase from "firebase/app";
+import "firebase/auth";
 export default {
-  setup() {
-    const email = ref("");
-    const password = ref("");
+    data() {
+        return {
+            email: '',
+            password: '',
+            error: ''
+        }
+    },
+    methods: {
+        async pressed() {
+            try {
+                const val = await firebase.auth().signInWithEmailAndPassword(this.email, this.password)
+                console.log(val);
+                this.$router.replace({name: "Secret"})
+            } catch (err) {
+                console.log(err)
+            }
 
-  const Login = () => {
-    firebase
-      .auth()
-      .signInWithEmailAndPassword(this.email.value, this.password.value)
-      .then(data => console.log(data))
-      .catch(err => alert(err.message));
-  }
-  return {
-    Login,
-    email,
-    password
-  }
-  }
+        }
+    }
+
 }
 </script>
+
 
 <style>
 
