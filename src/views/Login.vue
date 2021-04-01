@@ -15,6 +15,7 @@
 <script>
 import { ref } from 'vue';
 import firebase from 'firebase';
+import 'firebase/auth'; 
 
 export default {
   setup() {
@@ -24,7 +25,7 @@ export default {
   const Login = () => {
     firebase
       .auth()
-      .signInWithEmailAndPassword(email.value, password.value)
+      .signInWithEmailAndPassword(this.email.value, this.password.value)
       .then(data => console.log(data))
       .catch(err => alert(err.message));
   }
