@@ -2,13 +2,13 @@
  <div class="login">
   <link rel="stylesheet" href="../../style.css">
    <h1>Login</h1>
-   <form @submit.prevent="Login">
-     <input type="text" placeholder="Email" v-model="email" />
-     <input type="password" placeholder="Password" v-model="password" />
+   <form @submit.prevent="Login"> 
+     <input type="text" placeholder="Email" v-model="email"/>
+     <input type="password" placeholder="Lösenord" v-model="password"/>
      <input type="submit" value="Login" />
-     <p class="loginLink">Inte medlem än? <router-link to="/register">Registrera Här</router-link></p>
+     <p class="loginLink">Inte medlem än? <router-link to="/register">Registrera här</router-link></p>
    </form>
-    <p class="backLink"><router-link to="/">Tillbaka</router-link></p>
+    <p class="backLink"><router-link to="/">Tillbaka till start</router-link></p>
  </div>
 </template>
 
@@ -17,15 +17,19 @@ import { ref } from 'vue';
 import firebase from 'firebase';
 import 'firebase/auth'; 
 
+
+
 export default {
+
+  
   setup() {
-    const email = ref("");
-    const password = ref("");
+  const email = ref("");
+  const password = ref("");
 
   const Login = () => {
     firebase
       .auth()
-      .signInWithEmailAndPassword(this.email.value, this.password.value)
+      .signInWithEmailAndPassword(email.value, password.value)
       .then(data => console.log(data))
       .catch(err => alert(err.message));
   }
