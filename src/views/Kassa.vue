@@ -1,9 +1,12 @@
 
 <template>
   <div class="kassa">
-    <h1>Welcome, {{ name }}</h1>
-    <button class="logout" @click="Logout">Logout</button>
-    <h1>Products</h1>
+
+  <link rel="stylesheet" href="../../style.css">
+    <!-- <h1>Välkommen, {{ name }}</h1> -->
+    <p class="loginLink"><router-link to="/login">Medlem? Logga in här</router-link></p>
+    
+    <h1>I din varukorg:</h1>
     <div class="products">
       <div v-for="product in products" :key="product.name">
         {{ product.name }}
@@ -11,13 +14,16 @@
         <div>{{ product.cost }}</div>
         <button v-on:click="addItemToCart(product)">Add to cart</button>
       </div>
-    </div>
+      </div>
+      <br><br><br>
+      <!-- <button class="logout" @click="Logout">Logout</button> -->
   </div>
 </template>
 
 <script>
 import { ref, onBeforeMount } from 'vue';
 import firebase from 'firebase';
+
 
 export default {
   setup () {
@@ -28,20 +34,21 @@ export default {
        const user = firebase.auth().currentUser;
       if (user) {
         name.value = user.email.split('@')[0];
-      }
+      } else 
+        alert ("Logga in");
     });
 
-    const Logout = () => {
-      firebase
-          .auth()
-          .signOut()
-          .then(() => console.log("Signed out"))
-          .catch(err => alert(err.message));
-    }
+    // const Logout = () => {
+    //   firebase
+    //       .auth()
+    //       .signOut()
+    //       .then(() => console.log("Signed out"))
+    //       .catch(err => alert(err.message));
+    // }
 
-    return {
+    return {  
       name,
-      Logout
+      // Logout
     }
   }
 }
@@ -58,12 +65,12 @@ export default {
         {
           name: "Hair Brush",
           cost: "$0.99",
-          image: "https://via.placeholder.com/150",
+          // image: "https://via.placeholder.com/150",
         },
         {
           name: "Death Star",
           cost: "$5.99",
-          image: "https://via.placeholder.com/150",
+          // image: "https://via.placeholder.com/150",
         },
       ],
     };
@@ -83,5 +90,4 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
 </style>
