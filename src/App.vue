@@ -3,18 +3,19 @@
     <top-header></top-header>
     <div id="nav">
       <router-link to="/">Varor</router-link> |
-      <router-link to="/kassa">Kassa</router-link>
+      <router-link to="/kassa">Kassa</router-link> |
+      <router-link to="/login">Login</router-link> |
+      <router-link to="/register">Register</router-link>
     </div>
     <router-view/>
   </div>
 </template>
 
 <script>
-  import TopHeader from "./components/Top-Header";
-
+import TopHeader from "./components/Top-Header";
 
 export default {
-  components: {'top-header': TopHeaderTopHeader}
+  components: {'top-header': TopHeader}
 }
 </script>
 
