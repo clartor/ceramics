@@ -6,6 +6,7 @@
       <button v-on:click="navigateTo('cart')">View Cart</button>
     </header>
 
+    <p class="loginLink"><router-link to="/login">Medlem? Logga in här</router-link></p>
     <div v-if="page === 'cart'">
       <Cart v-on:removeItemFromCart="removeItemFromCart" :cart="cart" />
     </div>
