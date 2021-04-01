@@ -13,34 +13,32 @@
 </template>
 
 <script>
-import { ref } from 'vue';
-import firebase from 'firebase';
-import 'firebase/auth'; 
-
-
-
+import firebase from "firebase/app";
+import "firebase/auth";
 export default {
+    data() {
+        return {
+            email: '',
+            password: '',
+            error: ''
+        }
+    },
+    methods: {
+        async pressed() {
+            try {
+                const val = await firebase.auth().signInWithEmailAndPassword(this.email, this.password)
+                console.log(val);
+                this.$router.replace({name: "Secret"})
+            } catch (err) {
+                console.log(err)
+            }
 
-  
-  setup() {
-  const email = ref("");
-  const password = ref("");
+        }
+    }
 
-  const Login = () => {
-    firebase
-      .auth()
-      .signInWithEmailAndPassword(email.value, password.value)
-      .then(data => console.log(data))
-      .catch(err => alert(err.message));
-  }
-  return {
-    Login,
-    email,
-    password
-  }
-  }
 }
 </script>
+
 
 <style>
 
