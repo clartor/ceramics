@@ -1,7 +1,9 @@
 <template>
     <div>
+
+    <link rel="stylesheet" href="../../style.css" />
         <br>  <!--Logged In-->
-        <span v-if="loggedIn"><button @click="signOut">Sign Out</button></span>    <!-- Sign Out Button - Only Visible if logged in -->
+        <span v-if="loggedIn"><button class="logUtKnapp" @click="signOut">Sign Out</button></span>    <!-- Sign Out Button - Only Visible if logged in -->
         <span v-else></span>  <!--No-->
         <div>                      <!--  v-if="firebase.auth().currentUser"   -->
             <!--<button @click="signOut">Sign Out</button>-->
