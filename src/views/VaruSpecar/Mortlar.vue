@@ -12,3 +12,14 @@
     </div>
 </div>              
 </template>
+
+
+<script>
+export default {
+    methods: {
+    addItemToCart(product) {
+      this.$emit("addItemToCart", product);
+    }
+  }
+}
+</script>
