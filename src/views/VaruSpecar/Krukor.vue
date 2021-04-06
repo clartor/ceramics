@@ -5,7 +5,7 @@
         <img src="../../../public/keramikBilder/kruka.jpg" alt="" class="produkt9"/>
         <img src="/../../keramikBilder/bild2/kruka2.jpg" alt="" class=""/>
         <img src="/../../keramikBilder/bild2/kruka3.jpg" alt="" class=""/>
-        <p>650kr <button> Lägg till i korg </button>  antal tillagda produkter</p>
+        <p>650kr <button> Lägg till i korg </button></p>
         <p>"Utan krukor har du inget hem"- Någon vis person, 750 år fr.Kr.
             <br>
             <br>
