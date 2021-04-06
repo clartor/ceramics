@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <link rel="stylesheet" href="../../style.css" />
-    <p>Du måste vara inloggad för att handla</p>
+    <p>Logga in för att handla!</p>
     <h1>Login</h1>
     <form @submit.prevent="pressed">
       <input type="text" placeholder="Email" v-model="email" />
