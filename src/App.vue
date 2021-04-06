@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <top-header></top-header>
+    <top-header> </top-header>
     <div id="nav">
       <router-link to="/">Varor</router-link> |
-      <router-link to="/kassa">Kassa</router-link> |
-      <router-link to="/login">Login</router-link> |
-      <router-link to="/register">Register</router-link>
+      <router-link to="/kassa">Kassa</router-link> 
+      <router-link to="/login" hidden>Login</router-link>
+      <router-link to="/register" hidden>Register</router-link>
     </div>
     <router-view/>
   </div>
@@ -13,9 +13,26 @@
 
 <script>
 import TopHeader from "./components/Top-Header";
+  // import { onBeforeMount } from 'vue';
+  // import { useRoute, useRouter } from 'vue-router';
+  // import firebase from 'firebase';
 
 export default {
-  components: {'top-header': TopHeader}
+  // setup () {
+  //   const router = useRouter();
+  //   const route = useRoute();
+
+  //   onBeforeMount(() => { //innan allt montas, kolla om user
+  //     firebase.auth().onAuthStateChanged((user) => {// all autentisering sker genom .auth(metod)
+  //     if (!user) { 
+  //       router.replace('/varor'); //(!user) gå to login page (home otillgänglig)
+  //     } else if ( route.path == "/login" || route.path == "/register"){ // if logged in send to kassa ▿ - login/register otillgängliga"
+  //       router.replace('/kassa')
+  //     }
+  //     });
+  //   });
+  
+    components: {'top-header': TopHeader}
 }
 </script>
 
