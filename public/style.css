@@ -1,0 +1,15 @@
+.loginLink{
+    padding: 0;
+    font-size: 13px;
+    border: none;
+    
+  }
+  .backLink{
+    padding: 0;
+    font-size: 13px;
+    border: none;
+    float: left;
+    margin: 15px;
+    top: 0;
+    text-decoration: none;
+  }
