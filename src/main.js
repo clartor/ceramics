@@ -19,6 +19,7 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
+
 Vue.config.productionTip = false
 Vue.prototype.$axios = axios;
 

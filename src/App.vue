@@ -14,6 +14,10 @@
 <script>
 import TopHeader from "./components/Top-Header";
 
+  //const firebase = require("firebase");
+// Required for side-effects
+//require("firebase/firestore");
+
 export default {
   components: {'top-header': TopHeader}
 }
@@ -86,3 +90,6 @@ button{
 //   opacity: 0.25;
 // }
 </style>
+
+
+
