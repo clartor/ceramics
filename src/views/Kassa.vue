@@ -3,7 +3,7 @@
     <header>
       <h1> I din varukorg: </h1>
     </header>
-      <!-- <button v-on:click="navigateTo('products')">View products</button>
+      <button v-on:click="navigateTo('products')">View products</button>
       {{cart.length}} in cart
       <button v-on:click="navigateTo('cart')">View Cart</button>
     
@@ -14,38 +14,38 @@
 
     <div v-if="page === 'products'">
       <Products v-on:addItemToCart="addItemToCart" />
-      </div> -->
+      </div>
   </div>
 </template>
 
 
 <script>
-// import Products from "../components/Products.vue";
-// import Cart from "../components/Cart.vue";
-// export default {
+import Products from "../components/Products.vue";
+import Cart from "../components/Cart.vue";
+export default {
   
-//   name: "App",
-//   data: () => {
-//     return {
-//       page: "products",
-//       cart: []
-//     };
-//   },
-//   methods: {
-//     addItemToCart(product) {
-//       this.cart.push(product);
-//     },
-//     removeItemFromCart(product) {
-//       this.cart.splice(this.cart.indexOf(product), 1);
-//     },
-//     navigateTo(page) {
-//       this.page = page;
-//     }
-//   },
-//   components: { Products, Cart }
-// };
+  name: "App",
+  data: () => {
+    return {
+      page: "products",
+      cart: []
+    };
+  },
+  methods: {
+    addItemToCart(product) {
+      this.cart.push(product);
+    },
+    removeItemFromCart(product) {
+      this.cart.splice(this.cart.indexOf(product), 1);
+    },
+    navigateTo(page) {
+      this.page = page;
+    }
+  },
+  components: { Products, Cart }
+};
 
-      // alert("Du måste vara inloggad för att handla")
+      alert("Du måste vara inloggad för att handla")
   
 </script>
 

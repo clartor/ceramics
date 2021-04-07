@@ -20,35 +20,9 @@
 <script>
 import firebase from "firebase/app";
 import "firebase/auth";
-// import { onBeforeMount } from 'vue';
-// import { useRouter } from 'vue-router';
-
 
 export default {
-//     mounted() {
-//   this.$nextTick(function () {
-//       firebase.auth().onAuthStateChanged((user) => {
-//       if (!user) {
-//       alert("Du måste först logga in");}
-    
-//       }
-//   )}
-// )},
 
-//     setup () {
-//     const router = useRouter();
-//     // const route = useRoute();
-
-//      onBeforeMount(() => { //innan allt montas, kolla om user
-//       firebase.auth().onAuthStateChanged((user) => {// all autentisering sker genom .auth(metod)
-//       if (!user) {
-//         alert("Du måste vara inloggad för att handla")
-//     } else if (user){ // if logged in send to home ▿ - login/register otillgängliga"
-//         router.replace('/kassa')
-//       }
-//       });
-//     });
-  
     data() {
         return {
             email: '',

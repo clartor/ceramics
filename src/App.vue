@@ -13,29 +13,8 @@
 
 <script>
 import TopHeader from "./components/Top-Header";
-  // import { onBeforeMount } from 'vue';
-  // import { useRoute, useRouter } from 'vue-router';
-  // import firebase from 'firebase';
-
-  //const firebase = require("firebase");
-// Required for side-effects
-//require("firebase/firestore");
 
 export default {
-  // setup () {
-  //   const router = useRouter();
-  //   const route = useRoute();
-
-  //   onBeforeMount(() => { //innan allt montas, kolla om user
-  //     firebase.auth().onAuthStateChanged((user) => {// all autentisering sker genom .auth(metod)
-  //     if (!user) { 
-  //       router.replace('/varor'); //(!user) gå to login page (home otillgänglig)
-  //     } else if ( route.path == "/login" || route.path == "/register"){ // if logged in send to kassa ▿ - login/register otillgängliga"
-  //       router.replace('/kassa')
-  //     }
-  //     });
-  //   });
-  
     components: {'top-header': TopHeader}
 }
 </script>
