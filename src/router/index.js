@@ -11,13 +11,13 @@ const routes =[
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {requiresAuth: true}
+  
   },
   {
     path: '/kassa',
     name: 'Kassa',
-    component: () => import('../views/Kassa.vue'),
-    meta: {requiresAuth: true}
   },
   {
     path: '/slatis',

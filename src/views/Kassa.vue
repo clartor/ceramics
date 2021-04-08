@@ -51,6 +51,7 @@ export default {
 .products {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 320px;
 }
 
 header {
