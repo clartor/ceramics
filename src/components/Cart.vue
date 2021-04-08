@@ -3,9 +3,9 @@
     <h1>Your Cart</h1>
     <div class="products">
       <div v-for="(product, index) in cart" :key="index">
-        <h3>{{product.name}}</h3>
-        <img :src="product.image" />
-        <div>{{product.cost}}</div>
+        <h3>{{product.name}}
+        <div>{{product.cost}}</div></h3>
+        <img :src="product.image" /> <br>
         <button v-on:click="removeItemFromCart(product)">Remove from cart</button>
       </div>
     </div>

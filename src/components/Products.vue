@@ -5,7 +5,7 @@
       <div v-for="(product, index) in products" :key="index">
         <h3>{{product.name}}
         <div class="cost">{{product.cost}}</div></h3>
-        <img :src="product.image" /> <br>
+        <router-link to="'/' + product.link"><img :src="product.image" /></router-link>  <br>
         <button v-on:click="addItemToCart(product)">Add to cart</button>
       </div>
     </div>
@@ -18,14 +18,51 @@ export default {
     return {
       products: [
         {
-          name: "Kannan",
-          cost: "590 kr",
-          image: "/../../keramikBilder/kannaEn.jpg"
+          name: "Slätis",
+          cost: "130 kr",
+          image: "../keramikBilder/kopparSläta.jpg",
+          link: "/slatis"
+        }
+        ,
+        {
+          name: "Lugn",
+          cost: "222 kr",
+          image: "../keramikBilder/koppUtanÖra.jpg"
         },
         {
-          name: "Mortla",
+          name: "Kaffe",
+          cost: "150 kr",
+          image: "../keramikBilder/brunMugg.jpg"
+        },
+        {
+          name: "Ribbis",
+          cost: "130 kr",
+          image: "../keramikBilder/kopparRibb.png",
+        },
+        {
+          name: "LillOra",
+          cost: "150 kr",
+          image: "../keramikBilder/kopparSmåÖron.png",
+        },
+        {
+          name: "Oljeflaska",
+          cost: "475 kr",
+          image: "../keramikBilder/olja.jpg",
+        },
+        {
+          name: "Kannor",
+          cost: "590 kr",
+          image: "../keramikBilder/kannaEn.jpg",
+        },
+        {
+          name: "Mortlar",
           cost: "529 kr",
-          image: "/../../keramikBilder/mortel.jpg"
+          image: "../keramikBilder/mortel.jpg",
+        },
+        {
+          name: "Krukor",
+          cost: "650 kr",
+          image: "../keramikBilder/kruka.jpg",
         }
       ]
     };
