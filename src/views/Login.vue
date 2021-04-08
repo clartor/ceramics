@@ -11,9 +11,7 @@
         Inte medlem än? <router-link to="/register">Registrera här</router-link>
       </p>
     </form>
-    <p class="backLink">
-      <router-link to="/">Tillbaka till start</router-link>
-    </p>
+    
   </div>
 </template>
 
@@ -42,7 +40,7 @@ export default {
         
         }
     }
-}
+};
 
 </script>
 

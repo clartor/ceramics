@@ -18,6 +18,8 @@ const routes =[
   {
     path: '/kassa',
     name: 'Kassa',
+    component: () => import('../views/Kassa.vue')
+
   },
   {
     path: '/slatis',
