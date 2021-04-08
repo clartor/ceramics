@@ -1,12 +1,12 @@
 <template>
   <div>
     <header>
-      <h1> I din varukorg: </h1>
-    </header>
+      <!-- <h1> I din varukorg: </h1> -->
       <button v-on:click="navigateTo('products')">View products</button>
       {{cart.length}} in cart
       <button v-on:click="navigateTo('cart')">View Cart</button>
     
+    </header>
     
     <div v-if="page === 'cart'">
       <Cart v-on:removeItemFromCart="removeItemFromCart" :cart="cart" />
@@ -44,8 +44,6 @@ export default {
   },
   components: { Products, Cart }
 };
-
-      alert("Du måste vara inloggad för att handla")
   
 </script>
 
@@ -55,12 +53,12 @@ export default {
   grid-template-columns: 1fr 1fr;
 }
 
-// header {
-//   height: 60px;
-//   background-color: rgb(196, 183, 183);
-//   box-shadow: 2px 2px 5px #999;
-//   text-align: right;
-//   font-size: 30px;
-//   padding-top: 20px;
-// }
+header {
+  height: 60px;
+  background-color: rgb(196, 183, 183);
+  box-shadow: 2px 2px 5px #999;
+  text-align: right;
+  font-size: 30px;
+  padding-top: 20px;
+}
 </style>

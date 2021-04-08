@@ -5,7 +5,7 @@
       <div v-for="(product, index) in products" :key="index">
         <h3>{{product.name}}
         <div class="cost">{{product.cost}}</div></h3>
-        <img :src="product.image" />
+        <img :src="product.image" /> <br>
         <button v-on:click="addItemToCart(product)">Add to cart</button>
       </div>
     </div>
@@ -20,13 +20,12 @@ export default {
         {
           name: "Kannan",
           cost: "590 kr",
-          //image: "../public/keramikBilder/kannaEn.jpg"
-          image: "/ceramics/src/views/VaruSpecar/LillOra.vue"
+          image: "/../../keramikBilder/kannaEn.jpg"
         },
         {
           name: "Mortla",
           cost: "529 kr",
-          //image: "https://via.placeholder.com/150"
+          image: "/../../keramikBilder/mortel.jpg"
         }
       ]
     };

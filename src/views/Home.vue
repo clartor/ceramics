@@ -16,8 +16,6 @@
       Ni kan känna varje drag, ni kan smaka min själ när era läppar rör koppens kant, det är en helhetsupplevelse ni kan få varje dag.
      </p>
       <div id="imagelist">
-
-        
         <!-- bilder = 320x320px -->
 
         <router-link to="/slatis">
