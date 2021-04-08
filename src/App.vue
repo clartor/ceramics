@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <top-header> </top-header>
-    <div id="nav">
-      <router-link to="/">Varor</router-link> |
-      <router-link to="/kassa">Kassa</router-link> 
+    <!-- <div id="nav">
+      <router-link to="/kassa" hidden>Kassa</router-link> 
       <router-link to="/login" hidden>Login</router-link>
       <router-link to="/register" hidden>Register</router-link>
-    </div>
+    </div> -->
+      <router-link to="/"> <h3> Välkommen kompis! </h3></router-link>
     <router-view/>
   </div>
 </template>
@@ -21,6 +21,7 @@ export default {
 
 <style lang="scss">
 #app {
+  top: 80px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
