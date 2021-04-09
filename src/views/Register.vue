@@ -8,7 +8,6 @@
       <input type="submit" value="Register" />
       <p class="loginLink">Redan medlem? <router-link to="/login">Logga in här</router-link></p>
     </form>
-  <p class="backLink"><router-link to="/">Tillbaka till start</router-link></p>
   </div>
 </template>
 

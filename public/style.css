@@ -13,3 +13,53 @@
     top: 0;
     text-decoration: none;
   }
+  .container {
+    display: grid;
+    grid-auto-rows: min-content;
+    /* grid-auto-columns: min-content; */
+    grid-column: (12 1fr);
+  }
+  h1 {
+    grid-column: 0/12;
+    grid-row: 1/2;
+    font-size: 38px;
+  }
+  h3{
+    grid-column: 0/12;
+    grid-row: 1/2;
+    font-size: 18px;
+    /* width: 320px; */
+  }
+  .testtest{
+    margin: 40px;
+    width: 320px;
+    display: inline-block;
+  }
+  body {
+    background-color: rgb(247, 241, 236);
+  }
+  .moodpic {
+    grid-row: 2/4;
+  }
+  p {
+    font-size: 20px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border: solid 1px;
+    padding: 20px;
+    line-height: 1.8;
+  }
+  #imagelist {
+    font-size: 0;
+    width: 1220px;
+    margin: 0 auto;
+  }
+  /* #imagelist a {
+    margin: 40px;
+  } */
+  #imagelist img {
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+  }
+  #imagelist img:hover {
+    opacity: 0.75;
+  }
